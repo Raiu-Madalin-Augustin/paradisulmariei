@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.415ca88b.css",
-    "main.js": "/static/js/main.1faeab96.js",
+    "main.css": "/static/css/main.8d36d294.css",
+    "main.js": "/static/js/main.42a09a46.js",
     "static/js/453.3e9c3f57.chunk.js": "/static/js/453.3e9c3f57.chunk.js",
+    "static/media/playground.png": "/static/media/playground.95411e1b9e8bddbc230c.png",
+    "static/media/image5.png": "/static/media/image5.18840519a13bf1988c7a.png",
+    "static/media/image2.png": "/static/media/image2.ff8514cc44ca28c1fbfe.png",
+    "static/media/image4.png": "/static/media/image4.b26c46df2a266ecfbe68.png",
+    "static/media/image1.png": "/static/media/image1.7e32990091ed9fdbc777.png",
+    "static/media/image3.png": "/static/media/image3.4a8f9206c8460c7f65be.png",
+    "static/media/LogoParadisulMarieiFormated.png": "/static/media/LogoParadisulMarieiFormated.316a0253580076c768df.png",
     "index.html": "/index.html",
-    "main.415ca88b.css.map": "/static/css/main.415ca88b.css.map",
-    "main.1faeab96.js.map": "/static/js/main.1faeab96.js.map",
+    "main.8d36d294.css.map": "/static/css/main.8d36d294.css.map",
+    "main.42a09a46.js.map": "/static/js/main.42a09a46.js.map",
     "453.3e9c3f57.chunk.js.map": "/static/js/453.3e9c3f57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.415ca88b.css",
-    "static/js/main.1faeab96.js"
+    "static/css/main.8d36d294.css",
+    "static/js/main.42a09a46.js"
   ]
 }
