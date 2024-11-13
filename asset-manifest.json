@@ -1,22 +1,40 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb8f6fc4.css",
-    "main.js": "/static/js/main.2b64ec17.js",
+    "main.css": "/static/css/main.635213a1.css",
+    "main.js": "/static/js/main.3fbb4f9b.js",
     "static/js/453.3e9c3f57.chunk.js": "/static/js/453.3e9c3f57.chunk.js",
     "static/media/playground.png": "/static/media/playground.95411e1b9e8bddbc230c.png",
     "static/media/image5.png": "/static/media/image5.18840519a13bf1988c7a.png",
     "static/media/image2.png": "/static/media/image2.ff8514cc44ca28c1fbfe.png",
     "static/media/image4.png": "/static/media/image4.b26c46df2a266ecfbe68.png",
+    "static/media/video7_drumul_catre_zona_de_amenajare_clear_frame_10.jpg": "/static/media/video7_drumul_catre_zona_de_amenajare_clear_frame_10.9004239980efe78d2d48.jpg",
+    "static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_3.jpg": "/static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_3.d1a19c320f5b07939940.jpg",
+    "static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_7.jpg": "/static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_7.93a7318184145e10e644.jpg",
     "static/media/image1.png": "/static/media/image1.7e32990091ed9fdbc777.png",
+    "static/media/video7_drumul_catre_zona_de_amenajare_clear_frame_7.jpg": "/static/media/video7_drumul_catre_zona_de_amenajare_clear_frame_7.1d182210bb0cd180a749.jpg",
+    "static/media/video6_clear_frame_1.jpg": "/static/media/video6_clear_frame_1.abc858a8513bddfe00b5.jpg",
+    "static/media/video6_clear_frame_3.jpg": "/static/media/video6_clear_frame_3.5d63c78d0910ecc7f499.jpg",
+    "static/media/video4_clear_frame_1.jpg": "/static/media/video4_clear_frame_1.94eccf783cffc4ffd020.jpg",
+    "static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_10.jpg": "/static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_10.cecc06c5fde53b644aa2.jpg",
+    "static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_2.jpg": "/static/media/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_2.d397b30d9d119c9517a3.jpg",
+    "static/media/video7_cand_se_facea_drumul_clear_frame_1.jpg": "/static/media/video7_cand_se_facea_drumul_clear_frame_1.3aab676babb0f29c6ed2.jpg",
+    "static/media/video7_cand_se_facea_drumul_clear_frame_2.jpg": "/static/media/video7_cand_se_facea_drumul_clear_frame_2.e49785998bf419f8886d.jpg",
     "static/media/image3.png": "/static/media/image3.4a8f9206c8460c7f65be.png",
+    "static/media/video2_clear_frame_7.jpg": "/static/media/video2_clear_frame_7.565f0610001123341ed4.jpg",
+    "static/media/video1_clear_frame_2.jpg": "/static/media/video1_clear_frame_2.18ce7f0444c411a8f7b3.jpg",
+    "static/media/video2_clear_frame_8.jpg": "/static/media/video2_clear_frame_8.1c5fcd5fc061aaa2464c.jpg",
+    "static/media/video2_clear_frame_10.jpg": "/static/media/video2_clear_frame_10.fb506cb9fd88f77c8e86.jpg",
+    "static/media/video1_green_space.jpg": "/static/media/video1_green_space.317b90098cfe1b32da9b.jpg",
+    "static/media/video2_clear_frame_3.jpg": "/static/media/video2_clear_frame_3.d0c5181e2f1861de327c.jpg",
+    "static/media/video2_clear_frame_9.jpg": "/static/media/video2_clear_frame_9.b31611abb2bdf1be3cb7.jpg",
     "static/media/LogoParadisulMarieiFormated.png": "/static/media/LogoParadisulMarieiFormated.316a0253580076c768df.png",
     "index.html": "/index.html",
-    "main.cb8f6fc4.css.map": "/static/css/main.cb8f6fc4.css.map",
-    "main.2b64ec17.js.map": "/static/js/main.2b64ec17.js.map",
+    "main.635213a1.css.map": "/static/css/main.635213a1.css.map",
+    "main.3fbb4f9b.js.map": "/static/js/main.3fbb4f9b.js.map",
     "453.3e9c3f57.chunk.js.map": "/static/js/453.3e9c3f57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb8f6fc4.css",
-    "static/js/main.2b64ec17.js"
+    "static/css/main.635213a1.css",
+    "static/js/main.3fbb4f9b.js"
   ]
 }
