@@ -73,8 +73,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="NAME"
-                {...register("name", {
+                placeholder="NUME"
+                {...register("nume", {
                   required: true,
                   maxLength: 100,
                 })}
@@ -103,13 +103,30 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   {errors.email.type === "pattern" && "Invalid email address."}
                 </p>
               )}
+              
+              <input
+                className={inputStyles}
+                type="text"
+                placeholder="TELEFON"
+                {...register("telefon", {
+                  required: true,
+                  pattern: /^[0-9]{10,15}$/, 
+                })}
+              />
+              {errors.phone && (
+                <p className="mt-1 text-primary-500">
+                  {errors.phone.type === "required" &&
+                    "This field is required."}
+                  {errors.phone.type === "pattern" && "Invalid phone number."}
+                </p>
+              )}
 
               <textarea
                 className={inputStyles}
-                placeholder="MESSAGE"
+                placeholder="MESAJ"
                 rows={4}
                 cols={50}
-                {...register("message", {
+                {...register("mesaj", {
                   required: true,
                   maxLength: 2000,
                 })}
@@ -134,7 +151,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
           {/* Right Side Image or Content */}
           <motion.div
-            className="mt-0 basis-2/5 md:mt-0 bg-primary-300 p-5 rounded-lg shadow-md" 
+            className="mt-10 md:mt-0 basis-2/5 bg-primary-300 p-5 rounded-lg shadow-md"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
