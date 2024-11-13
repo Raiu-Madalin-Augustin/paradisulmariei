@@ -38,11 +38,6 @@ type Props = {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Locație"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
                     page="Atracțiile noastre"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}

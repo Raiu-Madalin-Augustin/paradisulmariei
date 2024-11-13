@@ -145,7 +145,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88408.74053790628!2d21.223957398836813!3d46.17517144860045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745984ba35c59c3%3A0xf70074a3e558491!2sArad!5e0!3m2!1sro!2sro!4v1730208661131!5m2!1sro!2sro"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5434.367755838435!2d23.74094019801607!3d47.0758576412528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749ba0da3899de5%3A0xa40ebef8932d2195!2sCorneni!5e0!3m2!1sro!2sro!4v1731511467046!5m2!1sro!2sro"
               width="100%"
               height="400"
               style={{ border: "0", borderRadius: "8px" }}
