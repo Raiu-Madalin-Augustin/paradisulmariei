@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8d36d294.css",
-    "main.js": "/static/js/main.42a09a46.js",
+    "main.js": "/static/js/main.f0de37eb.js",
     "static/js/453.3e9c3f57.chunk.js": "/static/js/453.3e9c3f57.chunk.js",
     "static/media/playground.png": "/static/media/playground.95411e1b9e8bddbc230c.png",
     "static/media/image5.png": "/static/media/image5.18840519a13bf1988c7a.png",
@@ -12,11 +12,11 @@
     "static/media/LogoParadisulMarieiFormated.png": "/static/media/LogoParadisulMarieiFormated.316a0253580076c768df.png",
     "index.html": "/index.html",
     "main.8d36d294.css.map": "/static/css/main.8d36d294.css.map",
-    "main.42a09a46.js.map": "/static/js/main.42a09a46.js.map",
+    "main.f0de37eb.js.map": "/static/js/main.f0de37eb.js.map",
     "453.3e9c3f57.chunk.js.map": "/static/js/453.3e9c3f57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d36d294.css",
-    "static/js/main.42a09a46.js"
+    "static/js/main.f0de37eb.js"
   ]
 }
