@@ -1,8 +1,7 @@
-import ContactUsPageGraphic from "../../assets/ContactUsPageGraphic.png";
-import { useForm } from "react-hook-form";
-import { SelectedPage } from "../../shared/types";
-import HText from "../../shared/HText";
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import HText from "../../shared/HText";
+import { SelectedPage } from "../../shared/types";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -27,12 +26,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="contact" className="mx-auto w-5/6 pt-24 pb-32">
-      <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
-      >
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}>
         {/* HEADER */}
         <motion.div
-          className="md:w-3/5"
+          className="md:w-6/7"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -43,10 +40,17 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">Te Așteptăm la Paradisul Mariei!</span>
+            <span className="text-primary-500">
+              Te Așteptăm la Paradisul Mariei!
+            </span>
           </HText>
           <p className="my-5">
-          Intră în contact cu noi pentru a rezerva o zi de distracție sau pentru a afla mai multe despre activitățile și facilitățile noastre! Fie că organizezi o petrecere aniversară, un eveniment special, sau vrei doar să petreci o zi relaxantă cu familia, echipa noastră este aici să te ajute. Completează formularul și te vom contacta cât mai curând posibil.
+            Intră în contact cu noi pentru a rezerva o zi de distracție sau
+            pentru a afla mai multe despre activitățile și facilitățile noastre!
+            Fie că organizezi o petrecere aniversară, un eveniment special, sau
+            vrei doar să petreci o zi relaxantă cu familia, echipa noastră este
+            aici să te ajute. Completează formularul și te vom contacta cât mai
+            curând posibil.
           </p>
         </motion.div>
 
@@ -103,14 +107,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   {errors.email.type === "pattern" && "Invalid email address."}
                 </p>
               )}
-              
+
               <input
                 className={inputStyles}
                 type="text"
                 placeholder="TELEFON"
                 {...register("telefon", {
                   required: true,
-                  pattern: /^[0-9]{10,15}$/, 
+                  pattern: /^[0-9]{10,15}$/,
                 })}
               />
               {errors.phone && (
@@ -140,12 +144,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
 
-              <button
-                type="submit"
-                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
-              >
-                TRIMITE
-              </button>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                >
+                  TRIMITE
+                </button>
+              </div>
             </form>
           </motion.div>
 

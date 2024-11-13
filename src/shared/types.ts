@@ -1,6 +1,7 @@
 export enum SelectedPage {
   Home = "acasă",
-  OurAttractions = "ourattractions",
+  OurAttractions = "viitoareleatracți",
+  LocationPhotos = "încurând",
   Contact = "contact",
 }
 

@@ -7,17 +7,17 @@ import ActionButton from "../../shared/ActionButton";
 import Link from "./Link";
 
 type Props = {
-    isTopOfPage: boolean;
-    selectedPage: SelectedPage;
-    setSelectedPage: (value: SelectedPage) => void;
-  };
-  
-  const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
-    const flexBetween = "flex items-center justify-between";
-    const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-    const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
-  
+  isTopOfPage: boolean;
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+  const flexBetween = "flex items-center justify-between";
+  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+
   return (
     <nav>
       <div
@@ -38,14 +38,19 @@ type Props = {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Atracțiile noastre"
+                    page="În curând"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Viitoarele atracții"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <ActionButton setSelectedPage={setSelectedPage}>
-                  Contact
+                    Contact
                   </ActionButton>
                 </div>
               </div>
@@ -78,7 +83,7 @@ type Props = {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-             <Link
+            <Link
               page="Atracțiile noastre"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}

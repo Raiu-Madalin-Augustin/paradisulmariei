@@ -1,11 +1,11 @@
-import { SelectedPage, ClassType } from "../../shared/types";
+import { motion } from "framer-motion";
 import image1 from "../../assets/image1.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
 import image5 from "../../assets/image5.png";
-import { motion } from "framer-motion";
 import HText from "../../shared/HText";
+import { ClassType, SelectedPage } from "../../shared/types";
 import Class from "./Class";
 
 const classes: Array<ClassType> = [
@@ -18,7 +18,7 @@ const classes: Array<ClassType> = [
   {
     name: "Corturi pentru evenimente",
     description:
-    "Corturi decorate cu gust, gata pentru o aniversare sau o reuniune de familie. Setarea include mese aranjate cu accesorii de petrecere și bannere festive. Acest spațiu este ideal pentru a crea amintiri de neuitat într-o atmosferă caldă și prietenoasă.",
+      "Corturi decorate cu gust, gata pentru o aniversare sau o reuniune de familie. Setarea include mese aranjate cu accesorii de petrecere și bannere festive. Acest spațiu este ideal pentru a crea amintiri de neuitat într-o atmosferă caldă și prietenoasă.",
     image: image2,
   },
   {
@@ -36,7 +36,7 @@ const classes: Array<ClassType> = [
   {
     name: "Carusel",
     description:
-    "Un carusel vesel și colorat, perfect pentru a aduce zâmbete și bucurie copiilor. Această atracție clasică, cu scaune confortabile și o atmosferă jucăușă, adaugă un strop de magie de parc de distracții în locul de joacă, oferind momente de încântare pentru toți cei mici.",
+      "Un carusel vesel și colorat, perfect pentru a aduce zâmbete și bucurie copiilor. Această atracție clasică, cu scaune confortabile și o atmosferă jucăușă, adaugă un strop de magie de parc de distracții în locul de joacă, oferind momente de încântare pentru toți cei mici.",
     image: image5,
   },
 ];
@@ -47,7 +47,7 @@ type Props = {
 
 const Atractions = ({ setSelectedPage }: Props) => {
   return (
-    <section id="atracțiilenoastre" className="w-full bg-primary-100 py-5">
+    <section id="viitoareleatracții" className="w-full bg-primary-100 py-5">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurAttractions)}
       >
@@ -62,14 +62,20 @@ const Atractions = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/4">
-            <HText>Atracțiile noastre</HText>
+          <div className="md:w-6/7">
+            <HText>🛝 Viitoarele atracții 🎠</HText>
             <p className="py-5">
-              Descoperă un loc unde joaca și relaxarea se îmbină perfect!
-              Complexul nostru oferă activități și atracții pentru toate
-              vârstele – de la terenuri de joacă și castele gonflabile, la
-              ATV-uri electrice, tiroliană și carusel. Totul este gândit pentru
-              siguranța și bucuria copiilor, inclusiv a celor cu dizabilități.
+              Curând, acest loc de poveste va deveni destinația perfectă pentru
+              joacă și distracție în mijlocul naturii! De la complexul de joacă
+              și tiroliană la carusel accesibil și piscină cu bile, toate
+              atracțiile sunt pregătite pentru bucuria celor mici, inclusiv a
+              copiilor cu dizabilități. 🎠 Oferim și servicii de catering prin
+              <a href="https://haracatering.com/index.php" target="_blank">
+                {" "}
+                Hara Catering{" "}
+              </a>
+              pentru a transforma evenimentele în momente de neuitat. 🎉
+              Rămâneți aproape pentru noutăți!
             </p>
           </div>
         </motion.div>
