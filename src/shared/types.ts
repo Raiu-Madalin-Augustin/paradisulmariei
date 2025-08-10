@@ -1,8 +1,9 @@
 export enum SelectedPage {
   Home = "acasă",
-  OurAttractions = "viitoareleatracți",
-  LocationPhotos = "încurând",
+  OurAttractions = "atracții",
+  LocationPhotos = "împrejurimi",
   Contact = "contact",
+  Events = "evenimente",
 }
 
 export interface BenefitType {

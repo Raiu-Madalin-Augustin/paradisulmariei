@@ -54,12 +54,13 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Vino Acum!
+              Contactează-ne!
             </ActionButton>
             <AnchorLink
+              offset="80"
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.LocationPhotos)}
-              href={`#${SelectedPage.LocationPhotos}`}
+              onClick={() => setSelectedPage(SelectedPage.OurAttractions)}
+              href={`#${SelectedPage.OurAttractions}`}
             >
               <p>Descopera mai mult</p>
             </AnchorLink>
@@ -74,7 +75,6 @@ const Home = ({ setSelectedPage }: Props) => {
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
       </motion.div>
-
     </section>
   );
 };

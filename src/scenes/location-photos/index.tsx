@@ -1,116 +1,55 @@
 import { motion } from "framer-motion";
-import image1 from "../../assets/location-images/video1_clear_frame_2.jpg";
-import image2 from "../../assets/location-images/video1_green_space.jpg";
-import image7 from "../../assets/location-images/video2_clear_frame_10.jpg";
-import image3 from "../../assets/location-images/video2_clear_frame_3.jpg";
-import image4 from "../../assets/location-images/video2_clear_frame_7.jpg";
-import image5 from "../../assets/location-images/video2_clear_frame_8.jpg";
-import image6 from "../../assets/location-images/video2_clear_frame_9.jpg";
-import image8 from "../../assets/location-images/video4_clear_frame_1.jpg";
-import image11 from "../../assets/location-images/video6_clear_frame_1.jpg";
-import image12 from "../../assets/location-images/video6_clear_frame_3.jpg";
-import image13 from "../../assets/location-images/video7_cand_se_facea_drumul_clear_frame_1.jpg";
-import image14 from "../../assets/location-images/video7_cand_se_facea_drumul_clear_frame_2.jpg";
-import image16 from "../../assets/location-images/video7_drumul_catre_zona_de_amenajare_clear_frame_10.jpg";
-import image15 from "../../assets/location-images/video7_drumul_catre_zona_de_amenajare_clear_frame_7.jpg";
-import image20 from "../../assets/location-images/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_10.jpg";
-import image17 from "../../assets/location-images/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_2.jpg";
-import image18 from "../../assets/location-images/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_3.jpg";
-import image19 from "../../assets/location-images/video8_parcul_unde_va_fi_amenajat_locul_de_joaca_pt_copii_clear_frame_7.jpg";
 import HText from "../../shared/HText";
 import { ClassType, SelectedPage } from "../../shared/types";
-import Class from "./Class";
+import Class from "../atractii/Class";
 
-const classes: Array<ClassType> = [
+import pajiste from "../../assets/location-images/pajiste-flori.jpg";
+import trandafiri from "../../assets/location-images/trandafiri-gradina.jpg";
+import pasari from "../../assets/location-images/gospodarie-pasari.jpg";
+import capsuni from "../../assets/location-images/capsuni-gradina.jpg";
+import capsunaMacro from "../../assets/location-images/capsuna-salb-macro.jpg";
+import privelisteVerde from "../../assets/location-images/video1_green_space.jpg";
+import panouriSolare from "../../assets/location-images/panouri-solare.jpg";
+
+const surroundings: Array<ClassType> = [
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image1,
+    name: "Pajiște cu flori sălbatice",
+    description:
+      "Verde cât vezi cu ochii și flori de câmp – locul perfect pentru joacă în aer curat.",
+    image: pajiste,
   },
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image2,
+    name: "Trandafiri de grădină",
+    description: "Aer curat și culori vii pentru o plimbare relaxantă.",
+    image: trandafiri,
   },
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image3,
+    name: "Gospodăria cu păsări",
+    description:
+      "Viață autentică la țară: copii curioși, părinți liniștiți, natură peste tot.",
+    image: pasari,
   },
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image4,
+    name: "Căpșuni din grădină",
+    description: "Gust de copilărie: căpșuni coapte culese direct din grădină.",
+    image: capsuni,
   },
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image5,
+    name: "Căpșună de pădure",
+    description:
+      "Detalii mici care fac locul special – natură vie, la propriu.",
+    image: capsunaMacro,
   },
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image6,
+    name: "Priveliște verde",
+    description: "Un colț de liniște.",
+    image: privelisteVerde,
   },
   {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image7,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image8,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image11,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image12,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image13,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image14,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image15,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image16,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image17,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image18,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image19,
-  },
-  {
-    name: "În Curând...",
-    description: "Un loc de poveste pentru cei mici, în curs de amenajare...",
-    image: image20,
+    name: "Energie verde – panouri solare",
+    description:
+      "Suntem alimentați responsabil. Folosim panouri solare pentru a reduce amprenta de carbon și a menține locul prietenos cu natura.",
+    image: panouriSolare,
   },
 ];
 
@@ -118,9 +57,9 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const LocationPhotos = ({ setSelectedPage }: Props) => {
+const SurroundingsSection = ({ setSelectedPage }: Props) => {
   return (
-    <section id="încurând" className="w-full bg-primary-100 py-5">
+    <section id="împrejurimi" className="w-full bg-primary-100 py-5">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.LocationPhotos)}
       >
@@ -136,26 +75,24 @@ const LocationPhotos = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-6/7">
-            <HText>👷 În curs de amenajare... 🌳</HText>
+            <HText>🌿 Împrejurimile noastre: natură, liniște, aer curat</HText>
             <p className="py-5">
-              În mijlocul naturii, pe acest tărâm retras și rustic, se
-              pregătește un loc special pentru bucuria celor mici. 🌳 Aici,
-              copiii se vor putea bucura de spații de joacă în aer liber,
-              înconjurați de liniștea pădurii și cântecul greierilor. 🌞 Departe
-              de agitația orașului, acest peisaj idilic va prinde viață cu
-              activități și atracții speciale, toate amenajate cu grijă și
-              atenție pentru cei mici. 🎠 Curând, acest loc de poveste va fi
-              transformat într-un paradis de aventură pentru copii, unde natura
-              se întâlnește cu distracția. Vă așteptăm să reveniți pentru
-              noutăți și să descoperiți surprizele pe care le pregătim! ✨
+              La <strong>Paradisul Mariei</strong>, joaca se întâmplă în
+              mijlocul naturii. Pajiști cu flori sălbatice, grădini cu
+              trandafiri și căpșuni, gospodărie cu păsări și mult verde cât vezi
+              cu ochii. E locul unde copiii se bucură în siguranță, iar părinții
+              respiră liniște. În plus, susținem acest spațiu cu{" "}
+              <strong>energie verde</strong> din panouri solare — pentru un
+              viitor mai curat.
             </p>
           </div>
         </motion.div>
+
         <div className="mt-10 h-[475px] w-full overflow-x-auto overflow-y-hidden pb-10">
-          <ul className="w-[2800px] whitespace-nowrap">
-            {classes.map((item: ClassType, index) => (
+          <ul className="inline-flex whitespace-nowrap">
+            {surroundings.map((item, i) => (
               <Class
-                key={`${item.name}-${index}`}
+                key={`${item.name}-${i}`}
                 name={item.name}
                 description={item.description}
                 image={item.image}
@@ -168,4 +105,4 @@ const LocationPhotos = ({ setSelectedPage }: Props) => {
   );
 };
 
-export default LocationPhotos;
+export default SurroundingsSection;

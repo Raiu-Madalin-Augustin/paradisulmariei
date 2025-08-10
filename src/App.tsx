@@ -4,6 +4,7 @@ import ContactUs from "./scenes/contactUs";
 import Footer from "./scenes/footer";
 import Home from "./scenes/home";
 import LocationPhotos from "./scenes/location-photos";
+import EventsSection from "./scenes/evenimente";
 import Navbar from "./scenes/navbar";
 import { SelectedPage } from "./shared/types";
 
@@ -33,8 +34,9 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
-      <LocationPhotos setSelectedPage={setSelectedPage} />
       <Atractions setSelectedPage={setSelectedPage} />
+      <EventsSection setSelectedPage={setSelectedPage} />
+      <LocationPhotos setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
       <Footer />
     </div>
